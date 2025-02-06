@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'encrypted_model_fields',
+
     'otploginapp',
     'formsapp',
 ]
@@ -127,3 +130,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+FIELD_ENCRYPTION_KEY = 'D-tWHMbdJR-SGWzjRPWvsZRohAyWXv9kBq6LeUWqgrM='
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 4 * 1024 * 1024  # 4 MB
+FILE_UPLOAD_MAX_MEMORY_SIZE = 4 * 1024 * 1024  # 4 MB
